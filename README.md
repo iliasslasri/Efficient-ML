@@ -11,10 +11,11 @@ This repository contains the implemntation of a speaker recongnition system. The
 This repository also contains my learning on advanced efficient ML.
 
 
-# Paper to read
+# Papers to read
 
 
 [EIE: Efficient Inference Engine on Compressed Deep Neural Network](https://arxiv.org/pdf/1602.01528)
+[Learning both Weights and Connections for Efficient Neural Networks](https://arxiv.org/pdf/1506.02626)
 
 # Papers I read or I'm reading
 
