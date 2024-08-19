@@ -16,4 +16,6 @@ Low Bit-Width Operations are Cheap, Less Bit-Width → Less Energy
 
 <img src="images/1.png" width="800">
 
+<img src="images/linear_q.png" width="800">
+
 
