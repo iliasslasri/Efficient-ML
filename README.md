@@ -13,7 +13,8 @@ This repository also contains my learning on advanced efficient ML.
 # Papers I'm reading
 
 [A White Paper on Neural Network Quantization](https://arxiv.org/pdf/2106.08295)
-
+[A Perceptually-Motivated Approach for Low-Complexity, Real-Time
+Enhancement of Fullband Speech](https://jmvalin.ca/papers/percepnet.pdf)
 
 ### Programming advice for me :
 - Use sanity checks :
