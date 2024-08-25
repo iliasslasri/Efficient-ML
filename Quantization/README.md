@@ -18,4 +18,34 @@ Low Bit-Width Operations are Cheap, Less Bit-Width → Less Energy
 
 <img src="images/linear_q.png" width="800">
 
+<img src="images/P&Q.png" width="800">
 
+
+
+
+- Post-Traning Quantization
+- Quantization-Aware Training
+- binary and ternary quantization
+- mixed precision quantization
+
+### Post-Traning Quantization
+
+#### Quantization Granularity
+    - Per-Tensor 
+    - Per-Channel
+    - Group Quantization
+      -  Per-Vector Quantization
+      -  Shared Micro-exponent (MX) data type
+
+  - Plot the range of the weights and activations, for each channel. We may have large differences between the channels -> per-channel quantization.
+  
+<img src="images/Q2.png" width="800">
+
+- Overhead : Not free lunch :), more storage use to store the Scaling factors.
+
+To go to 4 bits, we need to go more fine-grained -> this gives us more flexibility to represent the weights and activations.
+    VS- Quant: Per-vectore Scaled Quantization : 
+
+<img src="images/Q3.png" width="800">
+
+Group Quantization -> Multi-level scaling scheme.
