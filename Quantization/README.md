@@ -89,7 +89,8 @@ Train the model taking quantization into consideration, ( after training, we qua
 - To minimize the loss of accuracy, especially aggressive quantization with 4 bits and lower bit width, neural network will be trained/fine-tuned with quantized weights and activations.
 - Usually, fine-tuning a pre-trained floating point model provides better accuracy than training from scratch.
 
-Let's suppose we have 1.2 as a weight, and we pass 1 to the network, if we get a gradient which is 0.1, we will add it to 1.2 instead of 1. 
+Let's suppose we have 1.2 as a weight, and we pass 1 to the network, if we get a gradient which is 0.1, we will add it to 1.2 instead of 1. This similates the quantization error in the forward pass, and puts it into the weights.
+
 <img src="images/Q9.png" width="800">
 
 <img src="images/Q10.png" width="800">
