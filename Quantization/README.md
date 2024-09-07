@@ -121,4 +121,7 @@ How should gradientsback-propagate through the (simulated) quantization?
 
 - Allocate different bit-widths to different layers, based on the sensitivity of the layer to quantization.
 - Challenge: Huge Design Space
-- Solution: Design Automation : HAQ: Hardware-Aware Automated Quantization with Mixed Precision [Wang et al., CVPR 2019
+- Solution: Design Automation : HAQ: Hardware-Aware Automated Quantization with Mixed Precision [Wang et al., CVPR 2019]
+- Outperforms other methods in terms of accuracy and efficiency. But requires more engineering effort (compiler, hardware, etc.), to make use of the mixed-precision quantization.
+
+<img src="images/summary.png" width="800">
