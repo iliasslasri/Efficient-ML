@@ -2,6 +2,8 @@
 
 [slides](https://www.dropbox.com/scl/fi/eos92o2fgys6gk0gizogl/lec05.pdf?rlkey=2hohvi8jcvjw3f8m8vugfa2mz&e=1&dl=0), [slides II](https://www.dropbox.com/scl/fi/1mo0umu0qtq7uxap2l5m3/lec06.pdf?rlkey=bdl2mgusgajddjuvjxb0fot36&e=1&dl=0)
 
+Floating point training -> PTQ -> QAT -> Inference, is the standard pipeline for quantization.
+
 Low Bit-Width Operations are Cheap, Less Bit-Width → Less Energy
 
 **Floating-Point numbers** : Exponent Widht -> Range, Mantissa Width -> Precision
@@ -95,3 +97,28 @@ Let's suppose we have 1.2 as a weight, and we pass 1 to the network, if we get a
 
 <img src="images/Q10.png" width="800">
 
+<img src="images/Q11.png" width="800">
+
+How should gradientsback-propagate through the (simulated) quantization?
+
+<img src="images/Q12.png" width="800">
+
+<img src="images/Q13.png" width="800">
+
+<img src="images/NNQ.png" width="800">
+
+
+
+## Binary and Ternary Quantization
+
+- Binary and ternary quantization are special cases of low-bit quantization.
+- Binary quantization is the most extreme form of quantization, where the weights and activations are quantized to 1 or -1.
+- Ternary quantization is a more relaxed form of quantization, where the weights and activations are quantized to 1, 0, or -1.
+- Binary and ternary quantization are very efficient in terms of storage and computation, but they are very challenging to train.
+
+## Mixed-Precision Quantization
+
+
+- Allocate different bit-widths to different layers, based on the sensitivity of the layer to quantization.
+- Challenge: Huge Design Space
+- Solution: Design Automation : HAQ: Hardware-Aware Automated Quantization with Mixed Precision [Wang et al., CVPR 2019
