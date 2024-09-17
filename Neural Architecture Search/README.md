@@ -1,4 +1,4 @@
-
+- Lecture slides : [dropbox](https://www.dropbox.com/scl/fi/lfcbzfbr3t2z9joz9ymt0/lec07.pdf?rlkey=yzx2o9bjnhzi5tstwevmcu6qv&e=2&dl=0)
 
 
 <img src="images/NAS1.png" width="800">
