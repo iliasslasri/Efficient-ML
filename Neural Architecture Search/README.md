@@ -91,3 +91,11 @@ _hypernetwork_
 hyypernetwork is a neural network that generates the weights of another neural network. The hypernetwork takes the architecture of the neural network as input and generates the weights of the neural network. The hypernetwork is trained to generate the weights of the neural network that maximizes the accuracy of the neural network.
 
 <img src="images/NAS19.png" width="800">
+
+
+**Zero-shot NAS**
+Estimate the accuracy without training it.
+
+
+<img src="images/NAS20.png" width="800">
+
