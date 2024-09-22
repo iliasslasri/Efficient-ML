@@ -39,5 +39,27 @@ Search strategies:
 Random search is the simplest search strategy, but it is not efficient. It is like a blind search, instead of using the information from the previous searches, just randomly search the space.
 
 **Reinforcement learning**
+This is a more advanced search strategy. The agent is the neural network, the environment is the search space, and the action is the architecture. The agent takes an action, the environment gives a reward, and the agent updates its policy based on the reward. The agent learns to find the best architecture.
 
 <img src="images/NAS8.png" width="800">
+
+
+**Gradient descent**
+
+This method is used to optimize the architecture. The architecture is represented as a vector, and the gradient of the loss function with respect to the architecture is calculated. Then the architecture is updated using the gradient descent algorithm. But we should keep all the gradients of all paths in memory, which is not practical. We can also add the latency of the architecture as a constraint to the loss function.
+
+<img src="images/NAS9.png" width="800">
+
+<img src="images/NAS10.png" width="800">
+
+**Evolutionary search**
+
+This method is inspired by the evolution of species.The neural networks are represented as genes, and the genes are mutated and crossed over to create new neural networks. The neural networks are evaluated based on their performance, and the best neural networks are selected to create the next generation. This method is more efficient than random search, but it is not as efficient as reinforcement learning.
+
+<img src="images/NAS11.png" width="800">
+<img src="images/NAS12.png" width="800">
+<img src="images/NAS13.png" width="800">
+
+_crossover_
+
+<img src="images/NAS14.png" width="800">
