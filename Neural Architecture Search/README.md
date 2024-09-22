@@ -1,5 +1,6 @@
-- Lecture slides : [dropbox](https://www.dropbox.com/scl/fi/lfcbzfbr3t2z9joz9ymt0/lec07.pdf?rlkey=yzx2o9bjnhzi5tstwevmcu6qv&e=2&dl=0)
+- Lecture slides : [part I](https://www.dropbox.com/scl/fi/lfcbzfbr3t2z9joz9ymt0/lec07.pdf?rlkey=yzx2o9bjnhzi5tstwevmcu6qv&e=2&dl=0), [part II](https://www.dropbox.com/scl/fi/hfstura3m6gf864jtxatz/lec08.pdf?rlkey=kafddvu496et6z01vgprm37px&e=1&dl=0)
 
+# introduction to Neural Architecture Search
 
 <img src="images/NAS1.png" width="800">
 <img src="images/NAS2.png" width="800">
@@ -63,3 +64,30 @@ This method is inspired by the evolution of species.The neural networks are repr
 _crossover_
 
 <img src="images/NAS14.png" width="800">
+
+
+# Efficient and Hardware-aware NAS
+**Accuracy estimation strategy**
+
+In NAS, we need to estimate the accuracy of the neural networks to evaluate them.
+
+<img src="images/NAS15.png" width="800">
+
+- _Train from scratch_ and observe the accuracy.
+<img src="images/NAS16.png" width="800">
+
+This method is slow and expensive, so we need to use a faster and cheaper method to estimate the accuracy.
+
+_Inheret weight_
+<img src="images/NAS16.png" width="800">
+
+<img src="images/NAS17.png" width="800">
+
+<img src="images/NAS18.png" width="800">
+
+
+_hypernetwork_
+
+hyypernetwork is a neural network that generates the weights of another neural network. The hypernetwork takes the architecture of the neural network as input and generates the weights of the neural network. The hypernetwork is trained to generate the weights of the neural network that maximizes the accuracy of the neural network.
+
+<img src="images/NAS19.png" width="800">
