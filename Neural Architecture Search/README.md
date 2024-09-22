@@ -18,3 +18,26 @@ MobileNet: depthwise-separable block
 - The 1x1 conv is used to mingule the info between the different channels.
 
 <img src="images/NAS5.png" width="800">
+
+
+In NAS, the search space is the space of all possible neural network architectures. The search space is huge, so we need to use a search strategy to find the best architecture. The search strategy can be random search, grid search, evolutionary search, reinforcement learning, etc.
+
+Search strategies:
+  - Grid search
+  - Random search
+  - Reinforcement learning
+  - Gradient descent
+  - Evolutionary search
+
+**Grid search**
+
+<img src="images/NAS6.png" width="800">
+<img src="images/NAS7.png" width="800">
+
+
+**Random search**
+Random search is the simplest search strategy, but it is not efficient. It is like a blind search, instead of using the information from the previous searches, just randomly search the space.
+
+**Reinforcement learning**
+
+<img src="images/NAS8.png" width="800">
