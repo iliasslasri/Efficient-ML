@@ -107,3 +107,31 @@ The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks [paper]
 ****System Support for Sparsity****
 
 EIE: Efficient Inference Engine
+
+
+### Summary :
+
+**Pruning** is a technique used to reduce the size of a model by removing unnecessary or less important parameters (weights or connections). The main goal of pruning is to maintain or improve model performance while reducing computational costs and memory usage.
+
+#### 1. **Why Prune?**
+   - **Reduce Model Size**: Decreases the number of parameters, making the model more lightweight.
+   - **Improve Efficiency**: Leads to faster inference and lower computational requirements.
+   - **Lower Memory Usage**: Optimizes memory footprint, crucial for resource-constrained environments.
+   - **Prevent Overfitting**: By removing less relevant weights, pruning can help improve the generalization of the model.
+
+#### 2. **Types of Pruning**
+   - **Magnitude-based Pruning**
+   - **Structured Pruning**: Eliminates entire neurons, channels, or filters, making the network more efficient at a higher abstraction level.
+   - **Unstructured Pruning**: Removes individual weights, but the structure of the network remains unchanged.
+   - **Gradient-based Pruning**: Weights are pruned based on their gradients or sensitivity, ensuring minimal performance loss.
+   
+#### 3. **Pruning Process**
+   - **Training**
+   - **Pruning**
+   - **Fine-tuning**: After pruning, the model is retrained (or fine-tuned) to recover any lost accuracy.
+
+#### 4. **Post-Pruning Considerations**
+   - **Performance Trade-off**: While pruning reduces model size and speeds up computation, it might degrade accuracy, so fine-tuning is essential.
+   - **Sparsity**: Unstructured pruning can lead to sparse weight matrices, making hardware acceleration more challenging.
+
+Pruning is often used in conjunction with other optimization techniques like quantization or knowledge distillation to further enhance model efficiency.
