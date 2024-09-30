@@ -124,6 +124,7 @@ EIE: Efficient Inference Engine
    - **Structured Pruning**: Eliminates entire neurons, channels, or filters, making the network more efficient at a higher abstraction level.
    - **Unstructured Pruning**: Removes individual weights, but the structure of the network remains unchanged.
    - **Gradient-based Pruning**: Weights are pruned based on their gradients or sensitivity, ensuring minimal performance loss.
+   - **Percentage-of-Zero-Based Pruning**
    
 #### 3. **Pruning Process**
    - **Training**
