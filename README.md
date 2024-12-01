@@ -21,4 +21,4 @@ Enhancement of Fullband Speech](https://jmvalin.ca/papers/percepnet.pdf)
 ### Programming advice for me :
 - Use sanity checks :
  Python : ``` assert isinstance(prune_ratio, (float, list)) ```, C++ : ``` static_assert(std::is_floating_point<T>::value, "T must be floating point"); ```, take a look at ``` def channel_prune(model: nn.Module,prune_ratio: Union[List, float]) -> nn.Module ``` in lab1.ipynb
-- deepcopy ;)
+- deepcopy ;)# GPU-MODE
